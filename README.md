@@ -42,4 +42,16 @@
    ```
 
 ## 部署说明
-本项目已适配 Vercel 部署，只需在 Vercel 后台配置 `VITE_AMAP_KEY` 和 `VITE_AMAP_SECURITY_CODE` 即可一键上线。
+本项目已适配 Vercel 部署。
+
+### 方式 1：一键部署 (推荐)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FClearKnight%2F-&env=VITE_AMAP_KEY,VITE_AMAP_SECURITY_CODE)
+
+点击上方按钮，系统会自动克隆仓库并在 Vercel 上创建新项目。
+
+### 方式 2：手动部署
+1. 在 Vercel 后台导入 GitHub 仓库。
+2. 在 **Environment Variables** 中配置以下变量：
+   - `VITE_AMAP_KEY`: `141fcdabe032ae93334074cfab19228f`
+   - `VITE_AMAP_SECURITY_CODE`: `f2836844f50057c85bf2fe9e03a9df4d`
+3. 点击 **Deploy** 即可上线。
