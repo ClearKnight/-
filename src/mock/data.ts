@@ -201,7 +201,10 @@ export const restaurants: Restaurant[] = [
     nearbySchools: [{ schoolId: 'sustech', distanceMeters: 850, walkingMinutes: 12 }],
     scores: { overall: 4.5, taste: 4.4, environment: 4.8, value: 3.5 },
     reviewCount: 1800,
-    tagsSummary: [{ tagId: 'sweet', tagName: '甜品/奶茶不错', count: 1200 }, { id: 'study_friendly', tagName: '自习友好', count: 350 }]
+    tagsSummary: [
+      { tagId: 'sweet', tagName: '甜品/奶茶不错', count: 1200 },
+      { tagId: 'study_friendly', tagName: '自习友好', count: 350 }
+    ]
   },
   {
     id: 'r-013',
