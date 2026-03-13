@@ -1,0 +1,80 @@
+.ufm-review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+}
+
+.ufm-review-form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ufm-review-form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ufm-review-form-score-input {
+  width: 60px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  color: #10b981;
+  outline: none;
+}
+
+.ufm-review-form-textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  font-size: 13px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.ufm-review-form-textarea:focus {
+  border-color: #4f46e5;
+}
+
+.ufm-review-form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ufm-review-form-submit {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #ffd000;
+  color: #333;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ufm-review-form-submit:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.ufm-review-form-submit:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+

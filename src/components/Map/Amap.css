@@ -1,0 +1,102 @@
+.ufm-amap-root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ufm-amap-canvas {
+  position: absolute;
+  inset: 0;
+  cursor: crosshair;
+}
+
+.ufm-map-tip {
+  display: none;
+}
+
+.ufm-add-btn-fab {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  background: #ffd000;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+
+.ufm-add-btn-fab:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 32px rgba(79, 70, 229, 0.4);
+}
+
+.ufm-add-btn-fab.active {
+  background: #ef4444;
+  transform: rotate(45deg);
+  box-shadow: 0 8px 24px rgba(239, 68, 68, 0.3);
+}
+
+.ufm-selection-tip {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  pointer-events: none;
+  z-index: 20;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slide-down 0.3s ease;
+}
+
+@keyframes slide-down {
+  from { transform: translate(-50%, -20px); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}
+
+.ufm-marker-label {
+  background: #ffd000;
+  color: #333;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 2px solid #ffffff;
+  transform: translateY(-8px);
+}
+
+.amap-marker-label {
+  border: none !important;
+  background: transparent !important;
+}
+
+.ufm-amap-error {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(248, 250, 252, 0.95);
+  color: #b91c1c;
+  font-size: 12px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.35);
+}
+

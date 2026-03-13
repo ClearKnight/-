@@ -1,0 +1,75 @@
+.ufm-filter-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ufm-quick-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ufm-tag-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 13px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ufm-tag-btn:hover {
+  border-color: #94a3b8;
+  background: #f1f5f9;
+}
+
+.ufm-tag-btn.active {
+  background: #ffd000;
+  border-color: #ffd000;
+  color: #333;
+  font-weight: 700;
+}
+
+.ufm-tag-icon {
+  font-size: 14px;
+}
+
+.ufm-filter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.ufm-filter-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ufm-filter-label {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.ufm-filter-select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  font-size: 13px;
+  color: #1e293b;
+  outline: none;
+  cursor: pointer;
+}
+
+.ufm-filter-select:focus {
+  border-color: #ffd000;
+}
+

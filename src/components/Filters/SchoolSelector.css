@@ -1,0 +1,48 @@
+.ufm-school-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.ufm-school-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: left;
+}
+
+.ufm-school-chip:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+  transform: translateY(-1px);
+}
+
+.ufm-school-chip-active {
+  background: #ffd000;
+  border-color: #ffd000;
+  color: #333;
+  box-shadow: none;
+}
+
+.ufm-school-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ufm-school-alias {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-top: 1px;
+}
+
+.ufm-school-chip-active .ufm-school-alias {
+  opacity: 0.9;
+}
+
